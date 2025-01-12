@@ -8,14 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #F7F7F7; /* Light gray background */
+    color: #333333; /* Dark gray text */
 }
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #002B5C; /* Navy Blue */
+    color: #FFFFFF; /* White text */
     padding: 10px 20px;
 }
 
@@ -40,20 +40,20 @@ header {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #FFFFFF; /* White text */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ff9900;
+    color: #00AEEF; /* Sky Blue */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #002B5C; /* Navy Blue */
+    color: #FFFFFF; /* White text */
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
@@ -66,6 +66,7 @@ main {
 
 h1, h2 {
     margin-bottom: 20px;
+    color: #002B5C; /* Navy Blue */
 }
 
 p {
@@ -74,8 +75,8 @@ p {
 
 /* Buttons */
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #002B5C; /* Navy Blue */
+    color: #FFFFFF; /* White text */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -83,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #00AEEF; /* Sky Blue */
 }
 
 /* Home Page */
@@ -93,7 +94,7 @@ button:hover {
     background-position: center;
     padding: 40px;
     text-align: center;
-    color: #fff;
+    color: #FFFFFF; /* White text */
 }
 
 .search-section h1 {
@@ -107,12 +108,12 @@ button:hover {
 }
 
 .search-section button {
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #00AEEF; /* Sky Blue */
+    color: #FFFFFF; /* White text */
 }
 
 .search-section button:hover {
-    background-color: #e68a00;
+    background-color: #002B5C; /* Navy Blue */
 }
 
 /* Product Cards */
@@ -126,7 +127,7 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #FFFFFF; /* White card background */
     transition: transform 0.3s;
 }
 
@@ -143,13 +144,13 @@ button:hover {
 .product-card h3 {
     padding: 10px;
     font-size: 1.2em;
-    color: #333;
+    color: #002B5C; /* Navy Blue */
 }
 
 .product-card p {
     padding: 0 10px;
     font-size: 0.9em;
-    color: #666;
+    color: #666; /* Light gray text */
 }
 
 .product-card button {
@@ -168,24 +169,24 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #FFFFFF; /* White background */
 }
 
 .blog-posts article h2 {
     font-size: 1.5em;
-    color: #333;
+    color: #002B5C; /* Navy Blue */
     margin-bottom: 10px;
 }
 
 .blog-posts article a {
-    color: #ff9900;
+    color: #00AEEF; /* Sky Blue */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .blog-posts article a:hover {
-    color: #e68a00;
+    color: #002B5C; /* Navy Blue */
 }
 
 /* About Page */
@@ -202,7 +203,7 @@ button:hover {
 form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #FFFFFF; /* White background */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -223,8 +224,8 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #00AEEF; /* Sky Blue */
+    color: #FFFFFF; /* White text */
     width: 100%;
     font-size: 1.1em;
 }
@@ -273,13 +274,13 @@ form button {
 }
 
 .account-container button {
-    background-color: #333;
-    color: #fff;
+    background-color: #002B5C; /* Navy Blue */
+    color: #FFFFFF; /* White text */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
 .account-container button:hover {
-    background-color: #555;
+    background-color: #00AEEF; /* Sky Blue */
 }
