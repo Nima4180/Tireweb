@@ -3,40 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account</title>
+    <title>My Account - Tread MTL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>My Account</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Tread MTL Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">My Account</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Login</h2>
-            <form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email">
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter your password">
+    <!-- Account Section -->
+    <section class="account">
+        <h1>My Account</h1>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </section>
 
-                <button type="submit">Login</button>
-            </form>
-        </section>
-        <section>
-            <h2>Create an Account</h2>
-            <form>
-                <label for="newEmail">Email:</label>
-                <input type="email" id="newEmail" placeholder="Enter your email">
-
-                <label for="newPassword">Password:</label>
-                <input type="password" id="newPassword" placeholder="Enter your password">
-
-                <button type="submit">Sign Up</button>
-            </form>
-        </section>
-    </main>
+    <!-- Footer -->
     <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@treadmtl.com</p>
+                <p>Phone: +1 234-567-890</p>
+                <p>Address: 123 Laval Street, Laval, QC</p>
+            </div>
+        </div>
         <p>&copy; 2025 Tread MTL. All rights reserved.</p>
     </footer>
 </body>
