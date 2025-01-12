@@ -1,60 +1,259 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Body and Background */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003366;
     padding: 10px 20px;
-    color: white;
+    background-color: #1e1e1e;
+    color: #fff;
 }
 
 header .logo img {
-    width: 120px;
+    max-width: 150px;
 }
 
-nav ul {
-    list-style: none;
+header nav ul {
     display: flex;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+header nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Hero Section */
 .hero {
+    background: url('images/hero-banner.jpg') center/cover no-repeat;
+    color: #fff;
     text-align: center;
     padding: 50px 20px;
-    background-color: #f4f4f4;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.tire-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tire-search label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tire-search select,
+.tire-search button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.tire-search select {
+    background-color: #fff;
+    color: #333;
+}
+
+.tire-search button {
+    background-color: #ffa500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tire-search button:hover {
+    background-color: #ff8500;
+}
+
+/* Featured Tires Section */
+.featured-tires {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-tires h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tires-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tire-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.tire-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tire-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.tire-item p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.tire-item button {
+    padding: 10px 15px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tire-item button:hover {
+    background-color: #ff8500;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .features {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #fff;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.features .feature {
-    text-align: center;
+.feature {
     max-width: 300px;
+    text-align: center;
 }
 
-.tire-result {
-    border: 1px solid #ddd;
-    margin: 10px 0;
-    padding: 10px;
-    text-align: left;
+.feature img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #777;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
 }
