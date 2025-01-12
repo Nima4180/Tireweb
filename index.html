@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tread Tire Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Tread Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="html/index.html">Home</a></li>
+                    <li><a href="html/about.html">About Us</a></li>
+                    <li><a href="html/blog.html">Blog</a></li>
+                    <li><a href="html/cart.html">Cart</a></li>
+                    <li><a href="html/account.html">My Account</a></li>
+                    <li>
+                        <select id="language-switcher">
+                            <option value="en">English</option>
+                            <option value="fr">French</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="tire-search">
+            <h1>Find the Perfect Tires</h1>
+            <form>
+                <label for="make">Car Make:</label>
+                <input type="text" id="make" name="make" required>
+                <label for="model">Car Model:</label>
+                <input type="text" id="model" name="model" required>
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" required>
+                <label for="size">Tire Size:</label>
+                <input type="text" id="size" name="size">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="highlights">
+            <div class="highlight">
+                <img src="images/mechanic.jpg" alt="Mechanic">
+                <h2>Warranty</h2>
+                <p>We offer a comprehensive warranty for all our tires.</p>
+            </div>
+            <div class="highlight">
+                <img src="images/all-season.jpg" alt="All-Season Tires">
+                <h2>All-Season Tires</h2>
+                <p>Perfect for any weather condition.</p>
+            </div>
+            <div class="highlight">
+                <img src="images/delivery.jpg" alt="Delivery">
+                <h2>Fast Delivery</h2>
+                <p>Get your tires delivered to your doorstep.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tread Tire Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
