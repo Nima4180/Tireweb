@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Tread Tire Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../images/logo.png" alt="Tread Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Your Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>All-Season Tire Model XYZ</td>
+                    <td>$120</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>$120</td>
+                    <td><button>Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Winter Tire Model ABC</td>
+                    <td>$150</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>$150</td>
+                    <td><button>Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Subtotal: $270</p>
+            <p>Tax: $27</p>
+            <p><strong>Total: $297</strong></p>
+            <button>Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tread Tire Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
