@@ -3,102 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tread MTL - Home</title>
+    <title>Home - Tread</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/tread.png" alt="tread.png">
+            <img src="images/logo.png" alt="Tread Logo">
         </div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="account.html">My Account</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <div class="hero" style="background: url('images/hero-banner.jpg') center/cover no-repeat;">
         <div class="hero-content">
-            <h1>Find the Perfect Tires for Your Vehicle</h1>
-            <p>Explore our wide range of high-performance tires designed for all seasons.</p>
-            <form class="tire-search">
-                <label for="car-brand">Brand:</label>
-                <select id="car-brand">
-                    <option value="">Select Brand</option>
-                    <option value="toyota">Toyota</option>
-                    <option value="honda">Honda</option>
-                    <option value="ford">Ford</option>
-                </select>
-                <label for="car-year">Year:</label>
-                <select id="car-year">
-                    <option value="">Select Year</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                </select>
-                <label for="car-model">Model:</label>
-                <select id="car-model">
-                    <option value="">Select Model</option>
-                    <option value="corolla">Corolla</option>
-                    <option value="civic">Civic</option>
-                    <option value="f150">F-150</option>
-                </select>
-                <button type="submit">Search Tires</button>
-            </form>
+            <h1>Find the Perfect Tire</h1>
+            <p>Search by dimensions or car details to find the right tires for your needs.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Featured Tires -->
-    <section class="featured-tires">
-        <h2>Our Top Tires</h2>
-        <div class="tires-grid">
-            <div class="tire-item">
-                <img src="images/tire1.jpg" alt="Tire 1">
-                <h3>All-Season Tire</h3>
-                <p>$120.00</p>
-                <button>Shop Now</button>
+    <!-- Search Section -->
+    <section class="tire-search">
+        <h2>Search for Tires</h2>
+        <div class="search-container">
+            <div class="search-by-dimension">
+                <h3>Search by Tire Dimensions</h3>
+                <form>
+                    <label for="width">Width:</label>
+                    <input type="text" id="width" name="width" placeholder="e.g., 225">
+                    <label for="aspect-ratio">Aspect Ratio:</label>
+                    <input type="text" id="aspect-ratio" name="aspect-ratio" placeholder="e.g., 60">
+                    <label for="diameter">Diameter:</label>
+                    <input type="text" id="diameter" name="diameter" placeholder="e.g., 16">
+                    <button type="submit">Search</button>
+                </form>
             </div>
-            <div class="tire-item">
-                <img src="images/tire2.jpg" alt="Tire 2">
-                <h3>Winter Performance Tire</h3>
-                <p>$150.00</p>
-                <button>Shop Now</button>
-            </div>
-            <div class="tire-item">
-                <img src="images/tire3.jpg" alt="Tire 3">
-                <h3>Off-Road Tire</h3>
-                <p>$180.00</p>
-                <button>Shop Now</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <h2>Why Choose Tread MTL?</h2>
-        <div class="features">
-            <div class="feature">
-                <img src="images/delivery.jpg" alt="Fast Delivery">
-                <h3>Fast Delivery</h3>
-                <p>Get your tires delivered to your door quickly.</p>
-            </div>
-            <div class="feature">
-                <img src="images/warranty.jpg" alt="Warranty">
-                <h3>Comprehensive Warranty</h3>
-                <p>Peace of mind with every purchase.</p>
-            </div>
-            <div class="feature">
-                <img src="images/four-seasons.jpg" alt="Seasonal Tires">
-                <h3>All-Season Options</h3>
-                <p>Perfect performance in all weather conditions.</p>
+            <div class="search-by-car">
+                <h3>Search by Car Details</h3>
+                <form>
+                    <label for="year">Year:</label>
+                    <input type="text" id="year" name="year" placeholder="e.g., 2022">
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brand" name="brand" placeholder="e.g., Toyota">
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" placeholder="e.g., Corolla">
+                    <button type="submit">Search</button>
+                </form>
             </div>
         </div>
     </section>
@@ -109,19 +71,29 @@
             <div>
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div>
-                <h3>Contact</h3>
-                <p>Email: info@treadmtl.com</p>
-                <p>Phone: +1 234-567-890</p>
-                <p>Address: 123 Laval Street, Laval, QC</p>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: support@tread.com</li>
+                    <li>Phone: +1 (123) 456-7890</li>
+                    <li>Address: 123 Tread Street, Laval</li>
+                </ul>
             </div>
         </div>
-        <p>&copy; 2025 Tread MTL. All rights reserved.</p>
+        <p>&copy; 2025 Tread. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Language switcher functionality
+        function switchLanguage(lang) {
+            alert(`Language switched to ${lang === 'en' ? 'English' : 'French'}`);
+            // Add logic to translate the content dynamically
+        }
+    </script>
 </body>
 </html>
