@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tread MTL</title>
+    <title>Tread MTL - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Tread.png" alt="Tread MTL Logo">
+            <img src="images/tread.png" alt="Tread MTL Logo">
         </div>
         <nav>
             <ul>
@@ -23,48 +24,103 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Tread MTL</h1>
-            <p>Your one-stop shop for all your tire needs!</p>
-        </section>
-
-        <section class="tire-search">
-            <h2>Find the Perfect Tires</h2>
-            <form>
-                <label for="car-brand">Car Brand:</label>
-                <input type="text" id="car-brand" placeholder="Enter car brand">
-
-                <label for="car-model">Car Model:</label>
-                <input type="text" id="car-model" placeholder="Enter car model">
-
-                <label for="car-year">Car Year:</label>
-                <input type="text" id="car-year" placeholder="Enter car year">
-
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find the Perfect Tires for Your Vehicle</h1>
+            <p>Explore our wide range of high-performance tires designed for all seasons.</p>
+            <form class="tire-search">
+                <label for="car-brand">Brand:</label>
+                <select id="car-brand">
+                    <option value="">Select Brand</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="ford">Ford</option>
+                </select>
+                <label for="car-year">Year:</label>
+                <select id="car-year">
+                    <option value="">Select Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+                <label for="car-model">Model:</label>
+                <select id="car-model">
+                    <option value="">Select Model</option>
+                    <option value="corolla">Corolla</option>
+                    <option value="civic">Civic</option>
+                    <option value="f150">F-150</option>
+                </select>
                 <button type="submit">Search Tires</button>
             </form>
-        </section>
+        </div>
+    </section>
 
-        <section class="features">
+    <!-- Featured Tires -->
+    <section class="featured-tires">
+        <h2>Our Top Tires</h2>
+        <div class="tires-grid">
+            <div class="tire-item">
+                <img src="images/tire1.jpg" alt="Tire 1">
+                <h3>All-Season Tire</h3>
+                <p>$120.00</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="tire-item">
+                <img src="images/tire2.jpg" alt="Tire 2">
+                <h3>Winter Performance Tire</h3>
+                <p>$150.00</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="tire-item">
+                <img src="images/tire3.jpg" alt="Tire 3">
+                <h3>Off-Road Tire</h3>
+                <p>$180.00</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose Tread MTL?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="images/delivery.jpg" alt="Fast Delivery">
+                <h3>Fast Delivery</h3>
+                <p>Get your tires delivered to your door quickly.</p>
+            </div>
             <div class="feature">
                 <img src="images/warranty.jpg" alt="Warranty">
-                <h3>Warranty</h3>
-                <p>All our tires come with a comprehensive warranty.</p>
+                <h3>Comprehensive Warranty</h3>
+                <p>Peace of mind with every purchase.</p>
             </div>
             <div class="feature">
-                <img src="images/four-seasons.jpg" alt="4 Seasons Tire">
-                <h3>4 Seasons Performance</h3>
-                <p>Perfect for all weather conditions in Canada.</p>
+                <img src="images/four-seasons.jpg" alt="Seasonal Tires">
+                <h3>All-Season Options</h3>
+                <p>Perfect performance in all weather conditions.</p>
             </div>
-            <div class="feature">
-                <img src="images/delivery.jpg" alt="Delivery">
-                <h3>Fast Delivery</h3>
-                <p>Get your tires delivered to your doorstep quickly and safely.</p>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@treadmtl.com</p>
+                <p>Phone: +1 234-567-890</p>
+                <p>Address: 123 Laval Street, Laval, QC</p>
+            </div>
+        </div>
         <p>&copy; 2025 Tread MTL. All rights reserved.</p>
     </footer>
 </body>
