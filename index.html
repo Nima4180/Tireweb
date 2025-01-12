@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tread Tires</title>
+    <title>Tread - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="images/Tread.jpg" alt="Tread Logo">
-        </div>
+        <div class="logo"><img src="images/Tread.jpg" alt="Tread Logo"></div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
@@ -19,93 +17,63 @@
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <div class="header-right">
+            <a href="my-account.html" class="header-link">My Account</a>
+            <a href="cart.html" class="header-link">Cart</a>
             <div class="language-switch">
                 <a href="#">EN</a> | <a href="#">FR</a>
             </div>
-            <a href="my-account.html" class="header-link">My Account</a>
-            <a href="cart.html" class="header-link">Cart</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <h1>Welcome to Tread Tires</h1>
-        <p>Your trusted partner for high-quality tires</p>
-    </div>
-
-    <!-- Tire Search Section -->
-    <div class="search-section">
-        <h2>Find the Perfect Tire</h2>
-        <p>Search by tire size or vehicle details</p>
-        <div class="search-form">
-            <!-- Tire Size Search -->
-            <div class="tire-size-search">
-                <h3>Search by Tire Size</h3>
-                <input type="text" placeholder="Width (e.g., 205)">
-                <input type="text" placeholder="Aspect Ratio (e.g., 55)">
-                <input type="text" placeholder="Rim Diameter (e.g., 16)">
-                <button>Search</button>
-            </div>
-            <!-- Vehicle Info Search -->
-            <div class="vehicle-info-search">
-                <h3>Search by Vehicle</h3>
-                <select>
-                    <option value="">Select Year</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                </select>
-                <select>
-                    <option value="">Select Make</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Ford">Ford</option>
-                </select>
-                <select>
-                    <option value="">Select Model</option>
-                    <option value="Camry">Camry</option>
-                    <option value="Civic">Civic</option>
-                    <option value="F-150">F-150</option>
-                </select>
-                <button>Find Tires</button>
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <img src="images/car-on-road.jpg" alt="Car on Road" class="search-image">
+            <div class="search-form-container">
+                <h2>Find the Perfect Tire</h2>
+                <form class="search-form">
+                    <div class="search-by-size">
+                        <h3>Search by Tire Size</h3>
+                        <input type="text" placeholder="Width (e.g., 205)">
+                        <input type="text" placeholder="Aspect Ratio (e.g., 55)">
+                        <input type="text" placeholder="Rim Size (e.g., 16)">
+                        <button type="submit">Search</button>
+                    </div>
+                    <div class="search-by-car">
+                        <h3>Search by Car</h3>
+                        <select>
+                            <option value="">Year</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                        </select>
+                        <select>
+                            <option value="">Make</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                        </select>
+                        <select>
+                            <option value="">Model</option>
+                            <option value="Corolla">Corolla</option>
+                            <option value="Civic">Civic</option>
+                        </select>
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>123 Tire Street</li>
-                        <li>City, State ZIP</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Email: info@treadmtl.com</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 TreadMTL. All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
-            </div>
+            <h3>Tread</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2025 Tread Tires. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
