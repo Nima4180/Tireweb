@@ -8,7 +8,7 @@
 
 /* Body and Background */
 body {
-    background-color: #f7f8fc; /* Light gray background */
+    background: linear-gradient(to bottom, #002147, #F2F2F2); /* Gradient background */
     color: #333;
     line-height: 1.6;
     font-size: 16px;
@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #1e1e1e;
+    background-color: #002147; /* Dark navy blue */
     color: #fff;
 }
 
@@ -32,7 +32,7 @@ header .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
-    justify-content: center; /* Center align the navigation menu */
+    justify-content: center;
     flex: 1;
 }
 
@@ -44,16 +44,11 @@ header .nav-links li a {
 }
 
 header .nav-links li a:hover {
-    color: #ffa500;
-}
-
-.language-switcher {
-    display: flex;
-    gap: 10px;
+    color: #00A9CE; /* Accent blue for hover effect */
 }
 
 .language-switcher .lang-btn {
-    background-color: #ffa500;
+    background-color: #00A9CE; /* Accent blue */
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -65,7 +60,7 @@ header .nav-links li a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background-color: #333; /* Match the header/footer color */
+    background-color: #002147; /* Dark navy blue */
     color: #fff;
 }
 
@@ -82,7 +77,7 @@ header .nav-links li a:hover {
 .tire-search {
     padding: 40px 20px;
     text-align: center;
-    background-color: #333; /* Match the header/footer color */
+    background-color: #1E1E1E; /* Tire black */
     color: #fff;
 }
 
@@ -93,29 +88,27 @@ header .nav-links li a:hover {
 
 /* Footer */
 footer {
-    background-color: #1e1e1e;
+    background-color: #002147; /* Dark navy blue */
     color: #fff;
     text-align: center;
     padding: 40px 20px;
 }
 
-footer .footer-content {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
 footer h3 {
-    color: #ffa500;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
+    color: #00A9CE; /* Accent blue */
 }
 
 footer ul li a {
     text-decoration: none;
-    color: #ffa500;
+    color: #00A9CE; /* Accent blue */
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #fff; /* White on hover */
+}
+
+footer p {
+    margin-top: 20px;
+    color: #ccc;
 }
