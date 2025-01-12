@@ -3,94 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tread MTL - Home</title>
+    <title>Tire Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Tread.jpg" alt="Tread MTL Logo">
+            <img src="Tread.jpg" alt="Tire Logo">
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
         <div class="header-right">
             <div class="language-switch">
                 <a href="#">English</a> | <a href="#">French</a>
             </div>
-            <a href="account.html" class="header-link">My Account</a>
+            <a href="my-account.html" class="header-link">My Account</a>
             <a href="cart.html" class="header-link">Cart</a>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <div class="page-header">
-        <h1>Find the Perfect Tire</h1>
-        <p>Search by dimensions or your car details</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Find Your Perfect Tires</h1>
+        <p>Get the best deals for high-quality tires!</p>
+        <button class="btn-primary">Shop Now</button>
+    </section>
 
-    <!-- Tire Search Section -->
+    <!-- Search Section -->
     <section class="search-section">
         <h2>Search for Tires</h2>
         <form class="search-form">
-            <input type="text" placeholder="Width (e.g., 205)">
-            <input type="text" placeholder="Aspect Ratio (e.g., 55)">
-            <input type="text" placeholder="Diameter (e.g., 16)">
             <select>
                 <option>Year</option>
+                <option>2023</option>
                 <option>2022</option>
-                <option>2021</option>
                 <!-- Add more years -->
             </select>
             <select>
-                <option>Brand</option>
+                <option>Make</option>
+                <option>Ford</option>
                 <option>Toyota</option>
-                <option>Honda</option>
                 <!-- Add more brands -->
             </select>
             <select>
                 <option>Model</option>
-                <option>Camry</option>
-                <option>Civic</option>
+                <option>Explorer</option>
+                <option>Corolla</option>
                 <!-- Add more models -->
             </select>
-            <button type="submit">Find Tires</button>
+            <button type="submit">Search</button>
         </form>
     </section>
 
-    <!-- Warranty, Free Delivery, and Offer Section -->
+    <!-- Features Section -->
     <section class="features-section">
-        <div class="feature">
-            <img src="images/mechanic.jpg" alt="Warranty">
-            <h3>Warranty</h3>
-            <p>All our tires come with a comprehensive warranty. Drive worry-free!</p>
+        <div class="feature-box">
+            <img src="mechanic.jpg" alt="Warranty Image">
+            <h3>Warranty Included</h3>
+            <p>All tires come with a manufacturer warranty for peace of mind.</p>
         </div>
-        <div class="feature">
-            <img src="images/delivery.jpg" alt="Free Delivery">
+        <div class="feature-box">
+            <img src="delivery.png" alt="Delivery Icon">
             <h3>Free Delivery</h3>
-            <p>We offer free delivery on all orders within the Laval area.</p>
+            <p>Enjoy fast and free delivery on all tire purchases.</p>
         </div>
-        <div class="feature offer">
+        <div class="feature-box">
             <h3>Special Offer</h3>
-            <p>Get 12% off when you purchase 4 tires!</p>
-            <button>Shop Now</button>
+            <p>Save 12% on every purchase of 4 tires!</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <p>&copy; 2025 Tread MTL. All rights reserved.</p>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@tireweb.com</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Location: 123 Tire Lane, City, Country</li>
+                </ul>
+            </div>
         </div>
+        <p>&copy; 2025 Tire Web. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
