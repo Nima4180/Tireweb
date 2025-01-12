@@ -3,15 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Body and Background */
 body {
-    background: linear-gradient(to bottom, #002147, #F2F2F2); /* Gradient background */
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
     color: #333;
     line-height: 1.6;
-    font-size: 16px;
 }
 
 /* Header */
@@ -19,96 +17,280 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #002147; /* Dark navy blue */
+    padding: 10px 20px;
+    background-color: #003c69;
     color: #fff;
 }
 
-header .logo img {
+.logo img {
     max-width: 150px;
 }
 
-header .nav-links {
+.nav-links {
     display: flex;
-    list-style: none;
     gap: 20px;
-    justify-content: center;
-    flex: 1;
+    list-style: none;
 }
 
-header .nav-links li a {
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-header .nav-links li a:hover {
-    color: #00A9CE; /* Accent blue for hover effect */
-}
-
-.language-switcher .lang-btn {
-    background-color: #00A9CE; /* Accent blue */
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+    padding: 10px 15px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
+.nav-links a:hover {
+    background-color: #0073e6;
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #005a91;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-link:hover {
+    background-color: #0073e6;
+}
+
+.language-switch a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* Page Header */
+.page-header {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #002147; /* Dark navy blue */
-    color: #fff;
+    padding: 50px 20px;
+    background-color: #005a91;
+    color: white;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+.page-header h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
+.page-header p {
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
-/* Tire Search Section */
-.tire-search {
+/* Search Section */
+.search-section {
     padding: 40px 20px;
+    background-color: #f0f4f8;
     text-align: center;
-    background-color: #1E1E1E; /* Tire black */
-    color: #fff;
 }
 
-.tire-search h2 {
-    font-size: 2rem;
+.search-section h2 {
+    font-size: 1.8rem;
     margin-bottom: 20px;
+    color: #003c69;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-form input, .search-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #003c69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0073e6;
 }
 
 /* Footer */
 footer {
-    background-color: #002147; /* Dark navy blue */
-    color: #fff;
+    background-color: #003c69;
+    color: white;
+    padding: 20px 0;
     text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content ul li {
+    margin: 0 10px;
+}
+
+.footer-content ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul a:hover {
+    color: #0073e6;
+}
+
+.footer-content p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Cart Table */
+.cart-section {
     padding: 40px 20px;
 }
 
-footer h3 {
-    color: #00A9CE; /* Accent blue */
+.cart-table {
+    width: 100%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: #00A9CE; /* Accent blue */
-    transition: color 0.3s;
+.cart-table th, .cart-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
-footer ul li a:hover {
-    color: #fff; /* White on hover */
+.cart-table th {
+    background-color: #005a91;
+    color: white;
 }
 
-footer p {
+.cart-summary {
+    text-align: right;
     margin-top: 20px;
-    color: #ccc;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+}
+
+.cart-summary .btn-primary {
+    padding: 10px 20px;
+    background-color: #003c69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-summary .btn-primary:hover {
+    background-color: #0073e6;
+}
+
+/* Account Section */
+.account-section {
+    padding: 40px 20px;
+    max-width: 400px;
+    margin: auto;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.account-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.account-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #003c69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-form button:hover {
+    background-color: #0073e6;
+}
+
+/* Blog Section */
+.blog-post {
+    margin-bottom: 30px;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    color: #003c69;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    margin-bottom: 20px;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
 }
