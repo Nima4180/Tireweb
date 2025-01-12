@@ -13,58 +13,63 @@ body {
 
 /* Header */
 header {
+    background-color: #003c69;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #003c69;
-    color: #fff;
-}
-
-.logo img {
-    max-width: 150px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
-    list-style: none;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.nav-links li a:hover {
-    background-color: #0073e6;
-}
-
-/* Header Right Section */
 .header-right {
     display: flex;
-    align-items: center;
     gap: 15px;
 }
 
-.header-link, .language-switch a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+/* Hero Section */
+.hero-section {
+    background: url('images/tire-background.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #005a91;
+    color: white;
+    border-radius: 5px;
 }
 
 /* Search Section */
 .search-section {
+    background-color: #f0f4f8;
     padding: 40px 20px;
-    background-color: #e8f0f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 .search-container {
@@ -73,56 +78,17 @@ header {
     gap: 20px;
 }
 
-.search-image {
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
 }
 
-.search-form-container {
-    background: white;
+.feature {
+    text-align: center;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-}
-
-.search-form h3 {
-    color: #003c69;
-    margin-bottom: 10px;
-}
-
-.search-form input, .search-form select, .search-form button {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 180px;
-    font-size: 1rem;
-}
-
-.search-form button {
-    background-color: #003c69;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.search-form button:hover {
-    background-color: #0073e6;
-}
-
-/* Footer */
-footer {
-    background-color: #003c69;
-    color: white;
-    padding: 10px 0;
-}
-
-.footer-content {
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 10px 0;
 }
