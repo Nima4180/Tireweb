@@ -9,86 +9,140 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f9fc;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #003c69;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
+    padding: 10px 20px;
+    background-color: #003c69;
+    color: white;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    list-style: none;
+    gap: 15px;
 }
 
-.nav-links li a {
+.nav-links a {
     text-decoration: none;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #0073e6;
 }
 
 .header-right {
     display: flex;
+    align-items: center;
     gap: 15px;
-}
-
-/* Hero Section */
-.hero-section {
-    background: url('images/tire-background.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-}
-
-.btn-primary {
-    padding: 10px 20px;
-    background-color: #005a91;
-    color: white;
-    border-radius: 5px;
 }
 
 /* Search Section */
 .search-section {
-    background-color: #f0f4f8;
-    padding: 40px 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e6eff7;
 }
 
 .search-container {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-/* Features Section */
-.features-section {
+.search-container h3 {
+    margin-bottom: 10px;
+    color: #003c69;
+}
+
+.search-container form {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 40px 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.feature {
-    text-align: center;
+.search-container input,
+.search-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background-color: #003c69;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0073e6;
+}
+
+/* Subscription Popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup-content input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    background-color: #003c69;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #0073e6;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #003c69;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
