@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - Tread MTL</title>
+    <title>My Account</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/Tread.jpg" alt="Tread MTL Logo">
-        </div>
+        <div class="logo"><img src="images/Tread.jpg" alt="Tread Logo"></div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <div class="header-right">
-            <a href="account.html" class="header-link">My Account</a>
+            <a href="my-account.html" class="header-link">My Account</a>
             <a href="cart.html" class="header-link">Cart</a>
             <div class="language-switch">
                 <a href="#">EN</a> | <a href="#">FR</a>
             </div>
         </div>
     </header>
-    <section class="page-header">
+    <div class="page-header">
         <h1>My Account</h1>
-        <p>Sign in to manage your orders and account details.</p>
-    </section>
-    <section class="account-section">
-        <div class="container">
-            <form class="account-form">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
-                <button type="submit" class="btn-primary">Sign In</button>
-            </form>
-            <p>Don't have an account? <a href="#">Register Here</a></p>
-        </div>
-    </section>
+        <p>Log in to access your account.</p>
+    </div>
+    <div class="content account-section">
+        <form action="#" method="POST" class="account-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
     <footer>
         <div class="footer-content">
-            <h3>Tread MTL</h3>
-            <p>Your trusted tire provider in Laval.</p>
+            <h3>Tread</h3>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-            <p>© 2025 Tread MTL. All rights reserved.</p>
+            <p>&copy; 2025 Tread Tires. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
