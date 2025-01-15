@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tread Tires - Home</title>
+    <meta name="description" content="Tread - Find the perfect tires for your car">
     <link rel="stylesheet" href="styles.css">
+    <title>Tread - Home</title>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Tread.jpg" alt="Tread Logo">
+            <a href="index.html"><img src="images/Tread.jpg" alt="Tread Logo"></a>
         </div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
         <div class="header-right">
             <a href="my-account.html" class="header-link">My Account</a>
             <a href="cart.html" class="header-link">Cart</a>
@@ -29,41 +28,34 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Find Your Perfect Tire</h1>
-        <p>Shop the best tires for your car, truck, or SUV.</p>
-        <button>Shop Tires</button>
-    </section>
-
-    <!-- Search Section -->
+    <!-- Find Your Tire Section -->
     <section class="search-section">
-        <h2>Find the Right Tire</h2>
-        <form class="search-form">
-            <input type="text" placeholder="Tire Width">
-            <input type="text" placeholder="Aspect Ratio">
-            <input type="text" placeholder="Rim Diameter">
-            <button type="submit">Search</button>
-        </form>
-        <h3>Or Search by Vehicle</h3>
-        <form class="vehicle-search-form">
-            <select>
-                <option value="">Year</option>
-                <option>2023</option>
-                <option>2022</option>
-            </select>
-            <select>
-                <option value="">Make</option>
-                <option>Toyota</option>
-                <option>Honda</option>
-            </select>
-            <select>
-                <option value="">Model</option>
-                <option>Camry</option>
-                <option>Civic</option>
-            </select>
-            <button type="submit">Find Tires</button>
-        </form>
+        <img src="images/car-on-road.jpg" alt="Car on Road" class="car-on-road">
+        <div>
+            <h2>Find the Perfect Tires</h2>
+            <form action="#">
+                <select name="year" required>
+                    <option value="" disabled selected>Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+                <select name="make" required>
+                    <option value="" disabled selected>Make</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                </select>
+                <select name="model" required>
+                    <option value="" disabled selected>Model</option>
+                    <option value="Corolla">Corolla</option>
+                    <option value="Civic">Civic</option>
+                    <option value="F-150">F-150</option>
+                </select>
+                <input type="text" name="tire-dimension" placeholder="Tire Size (e.g., 205/55R16)">
+                <button type="submit">Search</button>
+            </form>
+        </div>
     </section>
 
     <!-- Warranty and Delivery Section -->
@@ -71,41 +63,30 @@
         <div class="feature">
             <img src="images/mechanic.jpg" alt="Warranty">
             <h3>Warranty</h3>
-            <p>All our tires come with a 3-year warranty.</p>
+            <p>Every tire comes with a 2-year limited warranty for your peace of mind.</p>
         </div>
         <div class="feature">
-            <img src="images/car-on-road.jpg" alt="Free Delivery">
+            <img src="images/delivery.jpg" alt="Free Delivery">
             <h3>Free Delivery</h3>
-            <p>Free delivery on orders over $50.</p>
+            <p>Enjoy free delivery on all orders above $100.</p>
         </div>
-    </section>
-
-    <!-- Promotions -->
-    <section class="promotions">
-        <h2>Special Offer</h2>
-        <p>Get 12% off when you buy 4 tires!</p>
+        <div class="feature offer">
+            <h3>12% Off</h3>
+            <p>Get 12% off when you purchase 4 tires.</p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Contact Us</h3>
-                <p>123 Tire Lane, Laval, QC</p>
-                <p>Email: info@tread.com</p>
-                <p>Phone: (123) 456-7890</p>
-            </div>
+            <ul class="footer-links">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p>&copy; 2025 Tread. All rights reserved.</p>
         </div>
-        <p>&copy; 2025 Tread Tires. All Rights Reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
