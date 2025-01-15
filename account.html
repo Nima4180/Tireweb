@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account</title>
+    <meta name="description" content="Manage your account with Tread. Login, register, and view your details.">
     <link rel="stylesheet" href="styles.css">
+    <title>My Account - Tread</title>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/Tread.jpg" alt="Logo"></a>
+            <a href="index.html"><img src="images/Tread.jpg" alt="Tread Logo"></a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -19,8 +20,8 @@
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <div class="header-right">
-            <a href="my-account.html">My Account</a>
-            <a href="#">Cart</a>
+            <a href="my-account.html" class="header-link active">My Account</a>
+            <a href="cart.html" class="header-link">Cart</a>
             <div class="language-switch">
                 <a href="#">EN</a> | <a href="#">FR</a>
             </div>
@@ -30,36 +31,54 @@
     <!-- Page Header -->
     <section class="page-header">
         <h1>My Account</h1>
-        <p>Manage your account details and orders.</p>
+        <p>Access your account details, login, or register for a new account.</p>
     </section>
 
-    <!-- Content Section -->
+    <!-- My Account Section -->
     <section class="account-section">
-        <form class="account-form">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
-            <button type="submit">Log In</button>
-        </form>
-        <p><a href="#">Forgot Password?</a></p>
-        <p><a href="#">Create an Account</a></p>
+        <div class="container">
+            <div class="login-section">
+                <h2>Login</h2>
+                <form action="#" method="post" class="account-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" placeholder="Your Email" required>
+
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" placeholder="Your Password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+                <p><a href="#">Forgot your password?</a></p>
+            </div>
+
+            <div class="register-section">
+                <h2>Register</h2>
+                <form action="#" method="post" class="account-form">
+                    <label for="register-name">Name:</label>
+                    <input type="text" id="register-name" name="name" placeholder="Your Name" required>
+
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="email" placeholder="Your Email" required>
+
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" name="password" placeholder="Create Password" required>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="terms-of-service.html">Terms of Service</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div>
-                <p>&copy; 2025 Your Tire Company. All rights reserved.</p>
-            </div>
+            <ul class="footer-links">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p>&copy; 2025 Tread. All rights reserved.</p>
         </div>
     </footer>
 </body>
