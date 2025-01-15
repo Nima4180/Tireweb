@@ -9,90 +9,104 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="images/Tread.jpg" alt="Tread Tires Logo">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="language-switch">
-                <a href="#">EN</a> | <a href="#">FR</a>
+        <div class="container">
+            <div class="logo">
+                <img src="images/Tread.jpg" alt="Tread Tires Logo">
             </div>
-            <a href="cart.html" class="header-link">Cart</a>
-            <a href="my-account.html" class="header-link">My Account</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-switch">
+                    <a href="#">EN</a> | <a href="#">FR</a>
+                </div>
+                <a href="cart.html" class="header-link">Cart</a>
+                <a href="my-account.html" class="header-link">My Account</a>
+            </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Trusted Tire Shop</h1>
+            <p>Find the best tires for your vehicle with ease.</p>
+        </div>
+    </section>
+
     <!-- Search Section -->
     <section class="search-section">
-        <h2>Find the Perfect Tire</h2>
-        <div class="search-container">
-            <div class="search-car">
-                <h3>Search by Vehicle</h3>
-                <form>
-                    <input type="text" placeholder="Year">
-                    <input type="text" placeholder="Make">
-                    <input type="text" placeholder="Model">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-            <div class="search-dimensions">
-                <h3>Search by Tire Size</h3>
-                <form>
-                    <input type="text" placeholder="Width">
-                    <input type="text" placeholder="Aspect Ratio">
-                    <input type="text" placeholder="Diameter">
-                    <button type="submit">Search</button>
-                </form>
+        <div class="container">
+            <h2>Find the Perfect Tire</h2>
+            <div class="search-container">
+                <div class="search-car">
+                    <h3>Search by Vehicle</h3>
+                    <form>
+                        <input type="text" placeholder="Year">
+                        <input type="text" placeholder="Make">
+                        <input type="text" placeholder="Model">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="search-dimensions">
+                    <h3>Search by Tire Size</h3>
+                    <form>
+                        <input type="text" placeholder="Width">
+                        <input type="text" placeholder="Aspect Ratio">
+                        <input type="text" placeholder="Diameter">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Subscription Popup -->
-    <div id="subscribe-popup" class="popup-overlay">
-        <div class="popup-content">
-            <span class="close-popup">&times;</span>
+    <!-- Warranty and Delivery Section -->
+    <section class="extras-section">
+        <div class="container">
+            <div class="extras">
+                <div class="extra-item">
+                    <img src="images/mechanic.jpg" alt="Warranty">
+                    <h3>Warranty</h3>
+                    <p>We provide a comprehensive warranty on all tires.</p>
+                </div>
+                <div class="extra-item">
+                    <img src="images/car-on-road.jpg" alt="Free Delivery">
+                    <h3>Free Delivery</h3>
+                    <p>Enjoy free delivery on all orders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscribe-section">
+        <div class="container">
             <h2>Subscribe to Our Newsletter</h2>
-            <p>Stay updated with the latest deals, news, and more.</p>
             <form id="subscribe-form">
                 <input type="email" placeholder="Enter your email address" required>
                 <button type="submit" class="btn-primary">Subscribe</button>
             </form>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
             <p>&copy; 2025 Tread Tires. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Show the popup after 5 seconds
-        setTimeout(() => {
-            document.getElementById('subscribe-popup').style.display = 'flex';
-        }, 5000);
-
-        // Close the popup
-        const closePopup = document.querySelector('.close-popup');
-        closePopup.addEventListener('click', () => {
-            document.getElementById('subscribe-popup').style.display = 'none';
-        });
-
-        // Handle subscription form submission
-        const subscribeForm = document.getElementById('subscribe-form');
-        subscribeForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for subscribing!');
-            document.getElementById('subscribe-popup').style.display = 'none';
-        });
-    </script>
 </body>
 </html>
