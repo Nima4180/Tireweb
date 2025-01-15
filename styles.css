@@ -12,57 +12,71 @@ body {
     line-height: 1.6;
 }
 
+/* Utility */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* Header */
 header {
+    background-color: #003c69;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #003c69;
-    color: white;
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
-    gap: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #0073e6;
+    color: #0073e6;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #005a91;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
 }
 
 /* Search Section */
 .search-section {
-    padding: 20px;
-    text-align: center;
+    padding: 30px 0;
     background-color: #e6eff7;
 }
 
 .search-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
-    flex-wrap: wrap;
-}
-
-.search-container h3 {
-    margin-bottom: 10px;
-    color: #003c69;
 }
 
 .search-container form {
@@ -71,78 +85,50 @@ header {
     gap: 10px;
 }
 
-.search-container input,
-.search-container button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Extras Section */
+.extras-section {
+    padding: 30px 0;
 }
 
-.search-container button {
-    background-color: #003c69;
-    color: white;
-    border: none;
-    cursor: pointer;
+.extras {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-.search-container button:hover {
-    background-color: #0073e6;
+.extra-item img {
+    width: 100px;
 }
 
-/* Subscription Popup */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.popup-content input {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.popup-content button {
-    background-color: #003c69;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.popup-content button:hover {
-    background-color: #0073e6;
-}
-
-.close-popup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+.extra-item h3 {
+    margin: 10px 0;
+    color: #003c69;
 }
 
 /* Footer */
 footer {
     background-color: #003c69;
     color: white;
+    padding: 20px 0;
+}
+
+.footer-links {
     text-align: center;
-    padding: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0073e6;
 }
