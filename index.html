@@ -3,90 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tread - Find the perfect tires for your car">
+    <title>Home - Tire Website</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Tread - Home</title>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/Tread.jpg" alt="Tread Logo"></a>
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Tire Website Logo">
+            </a>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
         <div class="header-right">
-            <a href="my-account.html" class="header-link">My Account</a>
-            <a href="cart.html" class="header-link">Cart</a>
             <div class="language-switch">
                 <a href="#">EN</a> | <a href="#">FR</a>
             </div>
+            <a href="my-account.html" class="header-link">My Account</a>
+            <a href="cart.html" class="header-link">Cart</a>
         </div>
     </header>
 
-    <!-- Find Your Tire Section -->
-    <section class="search-section">
-        <img src="images/car-on-road.jpg" alt="Car on Road" class="car-on-road">
-        <div>
-            <h2>Find the Perfect Tires</h2>
-            <form action="#">
-                <select name="year" required>
-                    <option value="" disabled selected>Year</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                </select>
-                <select name="make" required>
-                    <option value="" disabled selected>Make</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Ford">Ford</option>
-                </select>
-                <select name="model" required>
-                    <option value="" disabled selected>Model</option>
-                    <option value="Corolla">Corolla</option>
-                    <option value="Civic">Civic</option>
-                    <option value="F-150">F-150</option>
-                </select>
-                <input type="text" name="tire-dimension" placeholder="Tire Size (e.g., 205/55R16)">
-                <button type="submit">Search</button>
-            </form>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Tire Website</h1>
+        <p>Your ultimate destination for quality tires.</p>
+        <form class="search-form">
+            <select name="year" id="year">
+                <option value="">Year</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+            </select>
+            <select name="make" id="make">
+                <option value="">Brand</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+            </select>
+            <select name="model" id="model">
+                <option value="">Model</option>
+                <option value="Corolla">Corolla</option>
+                <option value="Civic">Civic</option>
+            </select>
+            <button type="submit">Find Tires</button>
+        </form>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo-section">
+        <div class="promo-item">
+            <img src="images/warranty.png" alt="Warranty Icon">
+            <p>Warranty</p>
+        </div>
+        <div class="promo-item">
+            <img src="images/free-delivery.png" alt="Free Delivery Icon">
+            <p>Free Delivery</p>
+        </div>
+        <div class="promo-item">
+            <img src="images/12-percent-off.png" alt="12% Off Icon">
+            <p>12% Off</p>
         </div>
     </section>
 
-    <!-- Warranty and Delivery Section -->
-    <section class="features">
-        <div class="feature">
-            <img src="images/mechanic.jpg" alt="Warranty">
-            <h3>Warranty</h3>
-            <p>Every tire comes with a 2-year limited warranty for your peace of mind.</p>
-        </div>
-        <div class="feature">
-            <img src="images/delivery.jpg" alt="Free Delivery">
-            <h3>Free Delivery</h3>
-            <p>Enjoy free delivery on all orders above $100.</p>
-        </div>
-        <div class="feature offer">
-            <h3>12% Off</h3>
-            <p>Get 12% off when you purchase 4 tires.</p>
-        </div>
+    <!-- Logo Slider -->
+    <section class="logo-slider">
+        <img src="images/Tire-Logo-Slider-Black.png" alt="Tire Logo Slider">
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <ul class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
                 <li><a href="about-us.html">About Us</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="terms-of-service.html">Terms of Service</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-            <p>&copy; 2025 Tread. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="terms-of-service.html">Terms of Servic
