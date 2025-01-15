@@ -3,110 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tread Tires</title>
+    <title>Tread Tires - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/Tread.jpg" alt="Tread Tires Logo">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                <div class="language-switch">
-                    <a href="#">EN</a> | <a href="#">FR</a>
-                </div>
-                <a href="cart.html" class="header-link">Cart</a>
-                <a href="my-account.html" class="header-link">My Account</a>
+        <div class="logo">
+            <img src="images/Tread.jpg" alt="Tread Logo">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="my-account.html" class="header-link">My Account</a>
+            <a href="cart.html" class="header-link">Cart</a>
+            <div class="language-switch">
+                <a href="#">EN</a> | <a href="#">FR</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1>Your Trusted Tire Shop</h1>
-            <p>Find the best tires for your vehicle with ease.</p>
-        </div>
+        <h1>Find Your Perfect Tire</h1>
+        <p>Shop the best tires for your car, truck, or SUV.</p>
+        <button>Shop Tires</button>
     </section>
 
     <!-- Search Section -->
     <section class="search-section">
-        <div class="container">
-            <h2>Find the Perfect Tire</h2>
-            <div class="search-container">
-                <div class="search-car">
-                    <h3>Search by Vehicle</h3>
-                    <form>
-                        <input type="text" placeholder="Year">
-                        <input type="text" placeholder="Make">
-                        <input type="text" placeholder="Model">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="search-dimensions">
-                    <h3>Search by Tire Size</h3>
-                    <form>
-                        <input type="text" placeholder="Width">
-                        <input type="text" placeholder="Aspect Ratio">
-                        <input type="text" placeholder="Diameter">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <h2>Find the Right Tire</h2>
+        <form class="search-form">
+            <input type="text" placeholder="Tire Width">
+            <input type="text" placeholder="Aspect Ratio">
+            <input type="text" placeholder="Rim Diameter">
+            <button type="submit">Search</button>
+        </form>
+        <h3>Or Search by Vehicle</h3>
+        <form class="vehicle-search-form">
+            <select>
+                <option value="">Year</option>
+                <option>2023</option>
+                <option>2022</option>
+            </select>
+            <select>
+                <option value="">Make</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+            </select>
+            <select>
+                <option value="">Model</option>
+                <option>Camry</option>
+                <option>Civic</option>
+            </select>
+            <button type="submit">Find Tires</button>
+        </form>
     </section>
 
     <!-- Warranty and Delivery Section -->
-    <section class="extras-section">
-        <div class="container">
-            <div class="extras">
-                <div class="extra-item">
-                    <img src="images/mechanic.jpg" alt="Warranty">
-                    <h3>Warranty</h3>
-                    <p>We provide a comprehensive warranty on all tires.</p>
-                </div>
-                <div class="extra-item">
-                    <img src="images/car-on-road.jpg" alt="Free Delivery">
-                    <h3>Free Delivery</h3>
-                    <p>Enjoy free delivery on all orders.</p>
-                </div>
-            </div>
+    <section class="features">
+        <div class="feature">
+            <img src="images/mechanic.jpg" alt="Warranty">
+            <h3>Warranty</h3>
+            <p>All our tires come with a 3-year warranty.</p>
+        </div>
+        <div class="feature">
+            <img src="images/car-on-road.jpg" alt="Free Delivery">
+            <h3>Free Delivery</h3>
+            <p>Free delivery on orders over $50.</p>
         </div>
     </section>
 
-    <!-- Subscription Section -->
-    <section class="subscribe-section">
-        <div class="container">
-            <h2>Subscribe to Our Newsletter</h2>
-            <form id="subscribe-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit" class="btn-primary">Subscribe</button>
-            </form>
-        </div>
+    <!-- Promotions -->
+    <section class="promotions">
+        <h2>Special Offer</h2>
+        <p>Get 12% off when you buy 4 tires!</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-links">
+        <div class="footer-content">
+            <div>
+                <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
-            <p>&copy; 2025 Tread Tires. All rights reserved.</p>
+            <div>
+                <h3>Contact Us</h3>
+                <p>123 Tire Lane, Laval, QC</p>
+                <p>Email: info@tread.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
         </div>
+        <p>&copy; 2025 Tread Tires. All Rights Reserved.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
