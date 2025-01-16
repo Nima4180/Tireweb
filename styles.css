@@ -1,114 +1,115 @@
-/* General Styles */
+/* General Reset */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background: #003c69;
+header, section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+#main-header {
+  font-family: Arial, sans-serif;
+}
+
+.header-top {
+  background-color: #0066cc;
   color: white;
-  padding: 20px 0;
-  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.header-bottom .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-buttons button {
+  background-color: #f00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* Tire Search Section */
-#tire-search {
-  padding: 40px 20px;
-  background-color: #f5f5f5;
+#search-tire {
+  background: url('images/winter-road.jpg') no-repeat center center/cover;
+  padding: 30px;
   text-align: center;
 }
 
 .search-container {
-  max-width: 800px;
-  margin: auto;
-  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
   padding: 20px;
+  display: inline-block;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.search-title {
-  font-size: 1.8rem;
-  color: #003c69;
-  margin-bottom: 20px;
+.search-tabs button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.tabs {
+.search-tabs button.active {
+  background-color: #f80;
+}
+
+.search-fields {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.tab {
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px 5px 0 0;
-  background-color: #e0e0e0;
-  color: #333;
-  cursor: pointer;
-  margin-right: 5px;
-  font-weight: bold;
+.search-fields label {
+  display: flex;
+  flex-direction: column;
 }
 
-.tab.active {
-  background-color: #003c69;
-  color: white;
+.search-fields select {
+  padding: 5px;
 }
 
-.tab-content {
-  border: 1px solid #ccc;
-  border-top: none;
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-.tab-pane {
-  display: none;
-}
-
-.tab-pane.active {
-  display: block;
-}
-
-.form-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-group select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.search-btn {
-  background-color: #003c69;
+.search-button {
+  background-color: #f00;
   color: white;
   padding: 10px 20px;
-  font-size: 1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.search-btn:hover {
-  background-color: #0073e6;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #003c69;
-  color: white;
-  margin-top: 20px;
 }
