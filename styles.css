@@ -1,191 +1,114 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #003c69;
-    color: #fff;
+  background: #003c69;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.header-left .logo img {
-    max-width: 150px;
+/* Tire Search Section */
+#tire-search {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+.search-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links li {
-    display: inline;
+.search-title {
+  font-size: 1.8rem;
+  color: #003c69;
+  margin-bottom: 20px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.nav-links a:hover {
-    background-color: #0073e6;
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.tab.active {
+  background-color: #003c69;
+  color: white;
 }
 
-.header-link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: 1px solid white;
-    border-radius: 5px;
+.tab-content {
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
-.header-link:hover {
-    background-color: #0073e6;
+.tab-pane {
+  display: none;
 }
 
-.language-switch a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin: 0 5px;
+.tab-pane.active {
+  display: block;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #005a91;
-    color: white;
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.search-form {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+.search-btn {
+  background-color: #003c69;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.search-form select, .search-form button {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.search-form button {
-    background-color: #003c69;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.search-form button:hover {
-    background-color: #0073e6;
-}
-
-/* Promo Section */
-.promo-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px 20px;
-    background-color: #f0f4f8;
-}
-
-.promo-item {
-    text-align: center;
-    max-width: 200px;
-}
-
-.promo-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.promo-item p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #003c69;
-}
-
-/* Logo Slider */
-.logo-slider {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #ffffff;
-}
-
-.logo-slider img {
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
+.search-btn:hover {
+  background-color: #0073e6;
 }
 
 /* Footer */
 footer {
-    background-color: #003c69;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-.footer-content h3 {
-    font-size: 1.5rem;
-}
-
-.footer-content ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-content ul a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.footer-content ul a:hover {
-    text-decoration: underline;
-}
-
-.footer-content p {
-    margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #003c69;
+  color: white;
+  margin-top: 20px;
 }
