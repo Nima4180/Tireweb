@@ -3,124 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Tire Shop</title>
+  <title>Tire Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header Section -->
-  <header>
-    <h1>Welcome to Tread MTL</h1>
+  <header id="main-header">
+    <div class="header-top">
+      <div class="left">
+        <p>ÉCONOMISEZ 10% À L'ACHAT DE 4 PRODUITS SÉLECTIONNÉS DE 500$+TX ET PLUS, VOIR DÉTAILS*</p>
+      </div>
+      <div class="right">
+        <span>Code → RABAIS10</span>
+      </div>
+    </div>
+    <nav class="header-bottom">
+      <div class="logo">
+        <img src="images/Tread.jpg" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Pneus</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button>English</button>
+        <button>Panier</button>
+      </div>
+    </nav>
   </header>
 
   <!-- Tire Search Section -->
-  <section id="tire-search">
+  <section id="search-tire">
     <div class="search-container">
-      <h2 class="search-title">Trouvez vos pneus</h2>
-      <div class="tabs">
-        <button class="tab active" data-target="#search-dimension">Par dimensions</button>
-        <button class="tab" data-target="#search-car">Par véhicule</button>
+      <div class="search-tabs">
+        <button class="active">Par dimensions</button>
+        <button>Par véhicule</button>
       </div>
-      <div class="tab-content">
-        <!-- Search by Dimension -->
-        <div id="search-dimension" class="tab-pane active">
-          <form>
-            <div class="form-group">
-              <label for="width">Largeur</label>
-              <select id="width">
-                <option value="" selected disabled>Choisir</option>
-                <option value="205">205</option>
-                <option value="215">215</option>
-                <option value="225">225</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="ratio">Rapport</label>
-              <select id="ratio">
-                <option value="" selected disabled>Choisir</option>
-                <option value="55">55</option>
-                <option value="60">60</option>
-                <option value="65">65</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="diameter">Diamètre</label>
-              <select id="diameter">
-                <option value="" selected disabled>Choisir</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-              </select>
-            </div>
-            <button type="submit" class="search-btn">Lancer la recherche</button>
-          </form>
-        </div>
-
-        <!-- Search by Car -->
-        <div id="search-car" class="tab-pane">
-          <form>
-            <div class="form-group">
-              <label for="year">Année</label>
-              <select id="year">
-                <option value="" selected disabled>Choisir</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="make">Marque</label>
-              <select id="make">
-                <option value="" selected disabled>Choisir</option>
-                <option value="Toyota">Toyota</option>
-                <option value="Honda">Honda</option>
-                <option value="Ford">Ford</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="model">Modèle</label>
-              <select id="model">
-                <option value="" selected disabled>Choisir</option>
-                <option value="Corolla">Corolla</option>
-                <option value="Civic">Civic</option>
-                <option value="F-150">F-150</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="trim">Finition</label>
-              <select id="trim">
-                <option value="" selected disabled>Choisir</option>
-                <option value="Standard">Standard</option>
-                <option value="Sport">Sport</option>
-                <option value="Luxury">Luxury</option>
-              </select>
-            </div>
-            <button type="submit" class="search-btn">Lancer la recherche</button>
-          </form>
-        </div>
+      <div class="search-fields">
+        <label>
+          Largeur
+          <select>
+            <option>205</option>
+            <option>215</option>
+          </select>
+        </label>
+        <label>
+          Rapport
+          <select>
+            <option>55</option>
+            <option>60</option>
+          </select>
+        </label>
+        <label>
+          Diamètre
+          <select>
+            <option>16</option>
+            <option>17</option>
+          </select>
+        </label>
       </div>
+      <button class="search-button">Lancer la recherche</button>
     </div>
   </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 Tread MTL. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const tabs = document.querySelectorAll(".tab");
-      const tabPanes = document.querySelectorAll(".tab-pane");
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => t.classList.remove("active"));
-          tabPanes.forEach((pane) => pane.classList.remove("active"));
-
-          tab.classList.add("active");
-          document.querySelector(tab.dataset.target).classList.add("active");
-        });
-      });
-    });
-  </script>
 </body>
 </html>
