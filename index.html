@@ -1,94 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tire Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Tire Shop</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-left">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Tire Website Logo">
-            </a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="language-switch">
-                <a href="#">EN</a> | <a href="#">FR</a>
-            </div>
-            <a href="my-account.html" class="header-link">My Account</a>
-            <a href="cart.html" class="header-link">Cart</a>
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Tread MTL</h1>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Tire Website</h1>
-        <p>Your ultimate destination for quality tires.</p>
-        <form class="search-form">
-            <select name="year" id="year">
-                <option value="">Year</option>
+  <!-- Tire Search Section -->
+  <section id="tire-search">
+    <div class="search-container">
+      <h2 class="search-title">Trouvez vos pneus</h2>
+      <div class="tabs">
+        <button class="tab active" data-target="#search-dimension">Par dimensions</button>
+        <button class="tab" data-target="#search-car">Par véhicule</button>
+      </div>
+      <div class="tab-content">
+        <!-- Search by Dimension -->
+        <div id="search-dimension" class="tab-pane active">
+          <form>
+            <div class="form-group">
+              <label for="width">Largeur</label>
+              <select id="width">
+                <option value="" selected disabled>Choisir</option>
+                <option value="205">205</option>
+                <option value="215">215</option>
+                <option value="225">225</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ratio">Rapport</label>
+              <select id="ratio">
+                <option value="" selected disabled>Choisir</option>
+                <option value="55">55</option>
+                <option value="60">60</option>
+                <option value="65">65</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="diameter">Diamètre</label>
+              <select id="diameter">
+                <option value="" selected disabled>Choisir</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+              </select>
+            </div>
+            <button type="submit" class="search-btn">Lancer la recherche</button>
+          </form>
+        </div>
+
+        <!-- Search by Car -->
+        <div id="search-car" class="tab-pane">
+          <form>
+            <div class="form-group">
+              <label for="year">Année</label>
+              <select id="year">
+                <option value="" selected disabled>Choisir</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
-            </select>
-            <select name="make" id="make">
-                <option value="">Brand</option>
+                <option value="2021">2021</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="make">Marque</label>
+              <select id="make">
+                <option value="" selected disabled>Choisir</option>
                 <option value="Toyota">Toyota</option>
                 <option value="Honda">Honda</option>
-            </select>
-            <select name="model" id="model">
-                <option value="">Model</option>
+                <option value="Ford">Ford</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="model">Modèle</label>
+              <select id="model">
+                <option value="" selected disabled>Choisir</option>
                 <option value="Corolla">Corolla</option>
                 <option value="Civic">Civic</option>
-            </select>
-            <button type="submit">Find Tires</button>
-        </form>
-    </section>
+                <option value="F-150">F-150</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="trim">Finition</label>
+              <select id="trim">
+                <option value="" selected disabled>Choisir</option>
+                <option value="Standard">Standard</option>
+                <option value="Sport">Sport</option>
+                <option value="Luxury">Luxury</option>
+              </select>
+            </div>
+            <button type="submit" class="search-btn">Lancer la recherche</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Promo Section -->
-    <section class="promo-section">
-        <div class="promo-item">
-            <img src="images/warranty.png" alt="Warranty Icon">
-            <p>Warranty</p>
-        </div>
-        <div class="promo-item">
-            <img src="images/free-delivery.png" alt="Free Delivery Icon">
-            <p>Free Delivery</p>
-        </div>
-        <div class="promo-item">
-            <img src="images/12-percent-off.png" alt="12% Off Icon">
-            <p>12% Off</p>
-        </div>
-    </section>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Tread MTL. All rights reserved.</p>
+  </footer>
 
-    <!-- Logo Slider -->
-    <section class="logo-slider">
-        <img src="images/Tire-Logo-Slider-Black.png" alt="Tire Logo Slider">
-    </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll(".tab");
+      const tabPanes = document.querySelectorAll(".tab-pane");
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="terms-of-service.html">Terms of Service</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-            <p>© 2025 Tire Website. All rights reserved.</p>
-        </div>
-    </footer>
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+          tab.classList.add("active");
+          document.querySelector(tab.dataset.target).classList.add("active");
+        });
+      });
+    });
+  </script>
 </body>
 </html>
