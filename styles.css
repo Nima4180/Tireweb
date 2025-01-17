@@ -1,115 +1,128 @@
-/* General Reset */
+/* General Styling */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header, section {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Header Styles */
-#main-header {
-  font-family: Arial, sans-serif;
+/* Header */
+.main-header {
+    background-color: #003366;
+    color: #fff;
 }
 
 .header-top {
-  background-color: #0066cc;
-  color: white;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #001f3f;
 }
 
-.header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
+.logo img {
+    max-height: 50px;
 }
 
-.header-bottom .logo img {
-  height: 50px;
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.header-right a:hover {
+    color: #ffcc00;
 }
 
-.nav-links li {
-  font-size: 1rem;
+/* Navbar */
+.navbar {
+    background-color: #003366;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-buttons button {
-  background-color: #f00;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin-left: 10px;
-  cursor: pointer;
-  border-radius: 5px;
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Tire Search Section */
-#search-tire {
-  background: url('images/winter-road.jpg') no-repeat center center/cover;
-  padding: 30px;
-  text-align: center;
+.nav-menu a:hover {
+    color: #ffcc00;
 }
 
-.search-container {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  display: inline-block;
-  border-radius: 10px;
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
 }
 
-.search-tabs button {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
+.hero-slider {
+    display: flex;
+    height: 100%;
+    animation: slide 12s infinite;
 }
 
-.search-tabs button.active {
-  background-color: #f80;
+.slide {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
 }
 
-.search-fields {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 20px 0;
+.slide-content {
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.search-fields label {
-  display: flex;
-  flex-direction: column;
+.cta-button {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.search-fields select {
-  padding: 5px;
+.cta-button:hover {
+    background-color: #ffaa00;
 }
 
-.search-button {
-  background-color: #f00;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Slider Animation */
+@keyframes slide {
+    0%, 50% {
+        transform: translateX(0);
+    }
+    50.01%, 100% {
+        transform: translateX(-100%);
+    }
 }
