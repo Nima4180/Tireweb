@@ -3,58 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Modern Tire Shop Website">
     <title>Modern Tire Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="main-header">
-        <div class="header-top">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/Tread.jpg" alt="Tread Logo">
-                    </a>
-                </div>
-                <div class="header-right">
-                    <a href="#" class="language-switcher">EN | FR</a>
-                    <a href="my-account.html" class="account-link">My Account</a>
-                    <a href="cart.html" class="cart-link">Cart (0)</a>
-                </div>
-            </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Modern Tire Shop</h1>
         </div>
-        <nav class="navbar">
-            <div class="container">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tires.html">Tires</a></li>
-                    <li><a href="promotions.html">Promotions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-slider">
-            <div class="slide" style="background-image: url('images/hero-tires.jpg');">
-                <div class="slide-content">
-                    <h1>Find the Best Tires for Your Vehicle</h1>
-                    <p>Unbeatable prices and expert service.</p>
-                    <a href="search.html" class="cta-button">Shop Tires</a>
+    <!-- Tire Search Section -->
+    <section class="tire-search-section">
+        <div class="container">
+            <h2 class="section-title">Find Your Perfect Tires</h2>
+            <div class="tire-search-widget">
+                <!-- Tabs for Dimension/Car Search -->
+                <div class="tabs">
+                    <button class="tab active" data-target="by-dimension">By Dimension</button>
+                    <button class="tab" data-target="by-car">By Car</button>
                 </div>
-            </div>
-            <div class="slide" style="background-image: url('images/hero-promo.jpg');">
-                <div class="slide-content">
-                    <h1>Seasonal Tire Promotions</h1>
-                    <p>Save big on winter and summer tires!</p>
-                    <a href="promotions.html" class="cta-button">View Promotions</a>
+                
+                <!-- Search by Dimension -->
+                <div class="tab-content active" id="by-dimension">
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="width">Width</label>
+                            <select id="width" name="width">
+                                <option value="">Select</option>
+                                <option value="205">205</option>
+                                <option value="215">215</option>
+                                <option value="225">225</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="aspect-ratio">Aspect Ratio</label>
+                            <select id="aspect-ratio" name="aspect-ratio">
+                                <option value="">Select</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="diameter">Diameter</label>
+                            <select id="diameter" name="diameter">
+                                <option value="">Select</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-button">Search Tires</button>
+                    </form>
+                </div>
+
+                <!-- Search by Car -->
+                <div class="tab-content" id="by-car">
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="make">Make</label>
+                            <select id="make" name="make">
+                                <option value="">Select</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Ford">Ford</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Model</label>
+                            <select id="model" name="model">
+                                <option value="">Select</option>
+                                <option value="Corolla">Corolla</option>
+                                <option value="Civic">Civic</option>
+                                <option value="Focus">Focus</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year</label>
+                            <select id="year" name="year">
+                                <option value="">Select</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-button">Search Tires</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Modern Tire Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
