@@ -5,43 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Tire Shop</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="images/your-logo.png" alt="Tire Shop Logo">
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="my-account.html">My Account</a></li>
-      </ul>
-    </nav>
-    <div class="header-right">
-      <a href="cart.html" class="header-link">Cart</a>
-      <div class="language-switch">
-        <a href="#">EN</a> | <a href="#">FR</a>
+  <header class="modern-header">
+    <div class="container">
+      <div class="header-logo">
+        <img src="images/your-logo.png" alt="Tire Shop Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="my-account.html">My Account</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="cart.html" class="header-cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <div class="language-switch">
+          <a href="#">EN</a> | <a href="#">FR</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Brand Section -->
-  <section class="brand-section">
-    <h2>Our Trusted Brands</h2>
-    <div class="brand-carousel">
-      <img src="images/brand1.png" alt="Brand 1">
-      <img src="images/brand2.png" alt="Brand 2">
-      <img src="images/brand3.png" alt="Brand 3">
-      <img src="images/brand4.png" alt="Brand 4">
-      <img src="images/brand5.png" alt="Brand 5">
+  <!-- Search Tire Section -->
+  <section class="search-tire-section">
+    <div class="container">
+      <h2>Find Your Perfect Tire</h2>
+      <div class="search-options">
+        <div class="search-option">
+          <h3>Search by Dimensions</h3>
+          <form action="#" method="GET" class="search-form">
+            <input type="text" placeholder="Width (e.g., 225)" required>
+            <input type="text" placeholder="Aspect Ratio (e.g., 60)" required>
+            <input type="text" placeholder="Diameter (e.g., 17)" required>
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+        </div>
+        <div class="search-option">
+          <h3>Search by Car</h3>
+          <form action="#" method="GET" class="search-form">
+            <select required>
+              <option value="" disabled selected>Year</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+            </select>
+            <select required>
+              <option value="" disabled selected>Make</option>
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+              <option value="ford">Ford</option>
+            </select>
+            <select required>
+              <option value="" disabled selected>Model</option>
+              <option value="corolla">Corolla</option>
+              <option value="civic">Civic</option>
+              <option value="mustang">Mustang</option>
+            </select>
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -49,36 +78,5 @@
   <footer>
     <p>&copy; 2025 Tire Shop. All rights reserved.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    $(document).ready(function () {
-      $('.brand-carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          }
-        ]
-      });
-    });
-  </script>
 </body>
 </html>
