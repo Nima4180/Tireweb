@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tire Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Tire Shop Website">
+    <title>Modern Tire Shop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header id="main-header">
-    <div class="header-top">
-      <div class="left">
-        <p>ÉCONOMISEZ 10% À L'ACHAT DE 4 PRODUITS SÉLECTIONNÉS DE 500$+TX ET PLUS, VOIR DÉTAILS*</p>
-      </div>
-      <div class="right">
-        <span>Code → RABAIS10</span>
-      </div>
-    </div>
-    <nav class="header-bottom">
-      <div class="logo">
-        <img src="images/Tread.jpg" alt="Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Pneus</a></li>
-        <li><a href="#">Promotions</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="nav-buttons">
-        <button>English</button>
-        <button>Panier</button>
-      </div>
-    </nav>
-  </header>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Tread.jpg" alt="Tread Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="language-switcher">EN | FR</a>
+                    <a href="my-account.html" class="account-link">My Account</a>
+                    <a href="cart.html" class="cart-link">Cart (0)</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tires.html">Tires</a></li>
+                    <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Tire Search Section -->
-  <section id="search-tire">
-    <div class="search-container">
-      <div class="search-tabs">
-        <button class="active">Par dimensions</button>
-        <button>Par véhicule</button>
-      </div>
-      <div class="search-fields">
-        <label>
-          Largeur
-          <select>
-            <option>205</option>
-            <option>215</option>
-          </select>
-        </label>
-        <label>
-          Rapport
-          <select>
-            <option>55</option>
-            <option>60</option>
-          </select>
-        </label>
-        <label>
-          Diamètre
-          <select>
-            <option>16</option>
-            <option>17</option>
-          </select>
-        </label>
-      </div>
-      <button class="search-button">Lancer la recherche</button>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('images/hero-tires.jpg');">
+                <div class="slide-content">
+                    <h1>Find the Best Tires for Your Vehicle</h1>
+                    <p>Unbeatable prices and expert service.</p>
+                    <a href="search.html" class="cta-button">Shop Tires</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-promo.jpg');">
+                <div class="slide-content">
+                    <h1>Seasonal Tire Promotions</h1>
+                    <p>Save big on winter and summer tires!</p>
+                    <a href="promotions.html" class="cta-button">View Promotions</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
