@@ -1,84 +1,162 @@
 /* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #f4f4f4;
     color: #333;
 }
 
+h1, h3 {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6f00;
+}
+
 /* Header */
 .main-header {
-    background-color: #1c1c1c;
-    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
 }
 
-.logo img {
+.main-header .logo img {
     height: 50px;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
+    color: #fff;
     margin: 0 10px;
-    font-weight: bold;
+    font-size: 1rem;
 }
 
 .header-actions a {
-    color: white;
-    text-decoration: none;
     margin: 0 10px;
+    color: #fff;
 }
 
-/* Hero Section */
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero .cta-button {
-    background-color: #ff6f00;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-/* Search Section */
-.search-tires {
-    background-color: white;
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
     padding: 40px 20px;
     text-align: center;
 }
 
-.search-form {
+.contact-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff8500;
+}
+
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ff6f00;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.search-form .form-group {
-    text-align: left;
-}
-
-/* Benefits Section */
-.benefits {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #eee;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    background-color: #1c1c1c;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.footer-links a {
+    color: #fff;
 }
