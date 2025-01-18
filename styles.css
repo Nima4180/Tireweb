@@ -3,160 +3,120 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
     color: #333;
-}
-
-h1, h3 {
-    color: #222;
 }
 
 a {
     text-decoration: none;
-    color: #ff6f00;
+    color: inherit;
 }
 
-/* Header */
-.main-header {
-    background: #333;
+/* Header Styles */
+header {
+    background-color: #003c69;
     color: #fff;
-    padding: 15px 20px;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.main-header .logo img {
-    height: 50px;
+header .logo img {
+    max-height: 50px;
 }
 
-.nav-links a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1rem;
-}
-
-.header-actions a {
-    margin: 0 10px;
-    color: #fff;
-}
-
-/* Contact Section */
-.contact-section {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.contact-section h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact-section p {
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.contact-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 500px;
-}
-
-.contact-form .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.contact-form label {
-    font-weight: bold;
-    color: #333;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    margin-top: 10px;
-    background-color: #ff6f00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #ff8500;
-}
-
-.contact-info {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 300px;
-    text-align: left;
-}
-
-.contact-info h3 {
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.contact-info p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.contact-info a {
-    color: #ff6f00;
-    text-decoration: none;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-links {
+.nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0 0 10px 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-.footer-links a {
+.nav-links li a {
     color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f0ad4e;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-link {
+    color: #fff;
+    background-color: #005a91;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.header-link:hover {
+    background-color: #f0ad4e;
+}
+
+.language-switch .lang {
+    color: #fff;
+    font-weight: bold;
+}
+
+.language-switch .lang:hover {
+    color: #f0ad4e;
+}
+
+/* Tire Search Section */
+.tire-search {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.tire-search h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tire-search form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tire-search input, .tire-search select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tire-search button {
+    background-color: #003c69;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.tire-search button:hover {
+    background-color: #f0ad4e;
 }
