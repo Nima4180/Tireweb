@@ -3,82 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manage your account with Tread. Login, register, and view your details.">
+    <title>My Account - Modern Tire Shop</title>
     <link rel="stylesheet" href="styles.css">
-    <title>My Account - Tread</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/Tread.jpg" alt="Tread Logo"></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-        <div class="header-right">
-            <a href="my-account.html" class="header-link active">My Account</a>
-            <a href="cart.html" class="header-link">Cart</a>
-            <div class="language-switch">
-                <a href="#">EN</a> | <a href="#">FR</a>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Modern Tire Shop Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="language">EN</a> / <a href="#" class="language">FR</a>
+                <a href="my-account.html" class="header-link active">My Account</a>
+                <a href="cart.html" class="header-link">Cart</a>
             </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <h1>My Account</h1>
-        <p>Access your account details, login, or register for a new account.</p>
-    </section>
-
-    <!-- My Account Section -->
-    <section class="account-section">
+    <!-- My Account Content -->
+    <section class="my-account">
         <div class="container">
-            <div class="login-section">
-                <h2>Login</h2>
-                <form action="#" method="post" class="account-form">
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="email" placeholder="Your Email" required>
-
-                    <label for="login-password">Password:</label>
-                    <input type="password" id="login-password" name="password" placeholder="Your Password" required>
-
-                    <button type="submit">Login</button>
-                </form>
-                <p><a href="#">Forgot your password?</a></p>
-            </div>
-
-            <div class="register-section">
-                <h2>Register</h2>
-                <form action="#" method="post" class="account-form">
-                    <label for="register-name">Name:</label>
-                    <input type="text" id="register-name" name="name" placeholder="Your Name" required>
-
-                    <label for="register-email">Email:</label>
-                    <input type="email" id="register-email" name="email" placeholder="Your Email" required>
-
-                    <label for="register-password">Password:</label>
-                    <input type="password" id="register-password" name="password" placeholder="Create Password" required>
-
-                    <button type="submit">Register</button>
-                </form>
-            </div>
+            <h1>My Account</h1>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Your Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a>.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-container">
             <ul class="footer-links">
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="support.html">Support</a></li>
                 <li><a href="terms-of-service.html">Terms of Service</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-            <p>&copy; 2025 Tread. All rights reserved.</p>
+            <p>&copy; 2025 Modern Tire Shop. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
