@@ -1,17 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const tabs = document.querySelectorAll(".tab");
-    const tabContents = document.querySelectorAll(".tab-content");
+// Handle Tab Switching for Search Section
+const dimensionTab = document.getElementById('search-dimension-btn');
+const carTab = document.getElementById('search-car-btn');
+const dimensionForm = document.getElementById('search-dimension');
+const carForm = document.getElementById('search-car');
 
-    tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-            // Remove active class from all tabs and contents
-            tabs.forEach((t) => t.classList.remove("active"));
-            tabContents.forEach((content) => content.classList.remove("active"));
+dimensionTab.addEventListener('click', () => {
+    dimensionTab.classList.add('active');
+    carTab.classList.remove('active');
+    dimensionForm.classList.add('active');
+    carForm.classList.remove('active');
+});
 
-            // Add active class to the clicked tab and corresponding content
-            tab.classList.add("active");
-            const target = tab.getAttribute("data-target");
-            document.getElementById(target).classList.add("active");
-        });
-    });
+carTab.addEventListener('click', () => {
+    carTab.classList.add('active');
+    dimensionTab.classList.remove('active');
+    carForm.classList.add('active');
+    dimensionForm.classList.remove('active');
 });
