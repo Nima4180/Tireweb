@@ -1,138 +1,97 @@
 /* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f7f9fc;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-    background-color: #003c69;
-    color: white;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #000;
+    color: #fff;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
-    max-width: 150px;
+    height: 50px;
 }
 
 .nav-links a {
-    margin: 0 10px;
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    margin: 0 15px;
 }
 
-.header-right a {
-    margin: 0 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.header-actions a {
+    color: #fff;
+    margin-left: 10px;
 }
 
 /* Hero Section */
-.hero-section {
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
     text-align: center;
-    padding: 50px 20px;
-    background: url('images/hero-bg.jpg') no-repeat center center / cover;
-    color: white;
 }
 
-.hero-section h1 {
+.hero-content h1 {
     font-size: 3rem;
 }
 
-.hero-section p {
-    margin: 20px 0;
+.hero-content p {
+    font-size: 1.5rem;
 }
 
-.cta-btn {
-    background-color: #ff9900;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+/* Tire Search Section */
+.tire-search {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
 }
 
-/* Search Section */
-.search-section {
-    background-color: #f0f4f8;
-    padding: 40px;
+.tire-search h2 {
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.search-container h2 {
-    margin-bottom: 20px;
-}
-
-.search-tab {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.search-tab.active {
-    background-color: #003c69;
-    color: white;
-}
-
-.search-form {
-    display: none;
-    margin-top: 20px;
-}
-
-.search-form.active {
-    display: block;
-}
-
-/* Promotions Section */
-.promotions-section {
+.search-options {
     display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background-color: white;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.promo-item {
-    text-align: center;
+.search-options form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.promo-item img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #003c69;
-    color: white;
-    text-align: center;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
-.footer-links a {
+footer .footer-links a {
+    color: #fff;
     margin: 0 10px;
-    text-decoration: none;
-    color: white;
 }
