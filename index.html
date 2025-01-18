@@ -36,7 +36,44 @@
     <!-- Main Content -->
     <main>
         <section class="tire-search">
-            <!-- Tire Search Section Will Be Added Here -->
+            <h2>Find Your Tires</h2>
+            <form action="search-results.html" method="get">
+                <div>
+                    <label for="search-type">Search By:</label>
+                    <select id="search-type" name="search-type" required>
+                        <option value="dimension">Tire Dimension</option>
+                        <option value="vehicle">Car Details</option>
+                    </select>
+                </div>
+                <div id="dimension-inputs">
+                    <input type="text" name="width" placeholder="Width (e.g., 205)">
+                    <input type="text" name="ratio" placeholder="Ratio (e.g., 55)">
+                    <input type="text" name="diameter" placeholder="Diameter (e.g., 16)">
+                </div>
+                <div id="vehicle-inputs" style="display: none;">
+                    <select name="year" id="year">
+                        <option value="">Year</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <!-- Add more years -->
+                    </select>
+                    <select name="make" id="make">
+                        <option value="">Make</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <!-- Add more car makes -->
+                    </select>
+                    <select name="model" id="model">
+                        <option value="">Model</option>
+                        <!-- Dynamically populated based on make -->
+                    </select>
+                    <select name="submodel" id="submodel">
+                        <option value="">Submodel</option>
+                        <!-- Dynamically populated based on model -->
+                    </select>
+                </div>
+                <button type="submit">Search Tires</button>
+            </form>
         </section>
     </main>
 
@@ -44,5 +81,21 @@
     <footer>
         <p>&copy; 2025 Tire Shop. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Toggle input visibility based on search type
+        document.getElementById('search-type').addEventListener('change', function () {
+            const searchType = this.value;
+            const dimensionInputs = document.getElementById('dimension-inputs');
+            const vehicleInputs = document.getElementById('vehicle-inputs');
+            if (searchType === 'dimension') {
+                dimensionInputs.style.display = 'block';
+                vehicleInputs.style.display = 'none';
+            } else {
+                dimensionInputs.style.display = 'none';
+                vehicleInputs.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
