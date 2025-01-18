@@ -3,80 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Tread - Get in touch with us for inquiries or support.">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Contact Us - Tread</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/Tread.jpg" alt="Tread Logo"></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact-us.html" class="active">Contact Us</a></li>
-        </ul>
-        <div class="header-right">
-            <a href="my-account.html" class="header-link">My Account</a>
-            <a href="cart.html" class="header-link">Cart</a>
-            <div class="language-switch">
-                <a href="#">EN</a> | <a href="#">FR</a>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Tire Shop Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact-us.html" class="active">Contact Us</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="language">EN</a> / <a href="#" class="language">FR</a>
+                <a href="my-account.html" class="header-link">My Account</a>
+                <a href="cart.html" class="header-link">Cart</a>
             </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <h1>Contact Us</h1>
-        <p>Have questions? Need support? We're here to help!</p>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Fill out the form below, and we'll get back to you as soon as possible.</p>
-            <form action="#" method="post" class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-
-                <button type="submit">Send Message</button>
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us today!</p>
+            <form action="submit-contact-form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
             </form>
-        </div>
-    </section>
-
-    <!-- Contact Details -->
-    <section class="contact-details">
-        <div class="container">
-            <h2>Contact Information</h2>
-            <p>Feel free to reach out to us directly via the following methods:</p>
-            <ul>
-                <li><strong>Email:</strong> support@tread.com</li>
-                <li><strong>Phone:</strong> +1 (800) 555-1234</li>
-                <li><strong>Address:</strong> 123 Tire Road, Auto City, USA</li>
-            </ul>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-container">
             <ul class="footer-links">
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="support.html">Support</a></li>
                 <li><a href="terms-of-service.html">Terms of Service</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-            <p>&copy; 2025 Tread. All rights reserved.</p>
+            <p>&copy; 2025 Modern Tire Shop. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
