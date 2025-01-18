@@ -8,19 +8,19 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Tire Shop Logo">
+                <img src="images/logo.png" alt="Modern Tire Shop Logo">
             </div>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="about-us.html">About Us</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact-us.html">Contact Us</a>
             </nav>
-            <div class="header-right">
-                <a href="#" class="lang">EN</a> / <a href="#" class="lang">FR</a>
+            <div class="header-actions">
+                <a href="#" class="language">EN</a> / <a href="#" class="language">FR</a>
                 <a href="my-account.html" class="header-link">My Account</a>
                 <a href="cart.html" class="header-link">Cart</a>
             </div>
@@ -28,95 +28,93 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Find Your Perfect Tire</h1>
-        <p>Unbeatable deals on quality tires. Shop now!</p>
-        <a href="#search-section" class="cta-btn">Get Started</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find the Perfect Tires for Your Vehicle</h1>
+            <p>Top-quality tires at unbeatable prices, delivered to your door!</p>
+        </div>
     </section>
 
     <!-- Tire Search Section -->
-    <section id="search-section" class="search-section">
-        <div class="search-container">
-            <h2>Search Tires</h2>
-            <div class="search-options">
-                <button id="search-dimension-btn" class="search-tab active">By Dimension</button>
-                <button id="search-car-btn" class="search-tab">By Car</button>
-            </div>
-            <div id="search-dimension" class="search-form active">
+    <section class="tire-search">
+        <h2>Search for Tires</h2>
+        <div class="search-options">
+            <div class="search-by-dimension">
+                <h3>Search by Dimension</h3>
                 <form action="#" method="GET">
-                    <select name="width" required>
-                        <option value="" disabled selected>Width</option>
-                        <option value="195">195</option>
-                        <option value="205">205</option>
-                    </select>
-                    <select name="height" required>
-                        <option value="" disabled selected>Height</option>
-                        <option value="55">55</option>
-                        <option value="65">65</option>
-                    </select>
-                    <select name="rim" required>
-                        <option value="" disabled selected>Rim</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                    </select>
-                    <button type="submit" class="search-btn">Search</button>
+                    <input type="text" name="width" placeholder="Width" required>
+                    <input type="text" name="aspect_ratio" placeholder="Aspect Ratio" required>
+                    <input type="text" name="diameter" placeholder="Diameter" required>
+                    <button type="submit">Search</button>
                 </form>
             </div>
-            <div id="search-car" class="search-form">
+            <div class="search-by-car">
+                <h3>Search by Car</h3>
                 <form action="#" method="GET">
                     <select name="year" required>
-                        <option value="" disabled selected>Year</option>
-                        <option value="2022">2022</option>
+                        <option value="">Year</option>
                         <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <!-- Add more years -->
                     </select>
-                    <select name="brand" required>
-                        <option value="" disabled selected>Brand</option>
+                    <select name="make" required>
+                        <option value="">Make</option>
                         <option value="Toyota">Toyota</option>
                         <option value="Ford">Ford</option>
+                        <option value="BMW">BMW</option>
+                        <!-- Add more car makes -->
                     </select>
                     <select name="model" required>
-                        <option value="" disabled selected>Model</option>
+                        <option value="">Model</option>
                         <option value="Corolla">Corolla</option>
-                        <option value="Focus">Focus</option>
+                        <option value="F-150">F-150</option>
+                        <option value="X5">X5</option>
+                        <!-- Add more car models -->
                     </select>
-                    <button type="submit" class="search-btn">Search</button>
+                    <button type="submit">Search</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Promotions Section -->
-    <section class="promotions-section">
-        <div class="promo-item">
-            <img src="images/warranty.jpg" alt="Warranty">
+    <!-- Warranty, Free Delivery, and Discount Section -->
+    <section class="features">
+        <div class="feature">
             <h3>Warranty</h3>
-            <p>Enjoy a reliable warranty on every purchase.</p>
+            <p>Up to 5 years of warranty on all tires.</p>
         </div>
-        <div class="promo-item">
-            <img src="images/free-delivery.jpg" alt="Free Delivery">
+        <div class="feature">
             <h3>Free Delivery</h3>
-            <p>Fast, free delivery on all orders.</p>
+            <p>Free delivery across Montreal and surrounding areas.</p>
         </div>
-        <div class="promo-item">
-            <img src="images/discount.jpg" alt="Discount">
+        <div class="feature">
             <h3>12% Off</h3>
-            <p>Get 12% off when you buy 4 tires!</p>
+            <p>Get 12% off on your first purchase.</p>
+        </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="brands" style="background-image: url('images/tire-bg.jpg');">
+        <h2>Top Tire Brands</h2>
+        <div class="brand-slider">
+            <img src="images/brand1.png" alt="Brand 1">
+            <img src="images/brand2.png" alt="Brand 2">
+            <img src="images/brand3.png" alt="Brand 3">
+            <img src="images/brand4.png" alt="Brand 4">
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-links">
-                <a href="about-us.html">About Us</a>
-                <a href="terms-of-service.html">Terms of Service</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="contact-us.html">Contact Us</a>
-            </div>
+            <ul class="footer-links">
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
             <p>&copy; 2025 Modern Tire Shop. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
