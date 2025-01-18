@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Tire Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/your-logo.png" alt="Tire Shop Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="search-results">
+            <h1>Search Results</h1>
+            <p>Below are the results based on your search:</p>
+            <ul id="results-list">
+                <!-- Results will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Tire Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example: Retrieve search parameters
+        const params = new URLSearchParams(window.location.search);
+        const searchType = params.get('search-type');
+        const width = params.get('width');
+        const ratio = params.get('ratio');
+        const diameter = params.get('diameter');
+        const year = params.get('year');
+        const make = params.get('make');
+        const model = params.get('model');
+        const submodel = params.get('submodel');
+
+        // Example: Display search results (static for demonstration)
+        const resultsList = document.getElementById('results-list');
+
+        if (searchType === 'dimension') {
+            resultsList.innerHTML = `
+                <li>Tire found for ${width}/${ratio}R${diameter}</li>
+                <li>Example Tire Brand 1</li>
+                <li>Example Tire Brand 2</li>
+            `;
+        } else if (searchType === 'vehicle') {
+            resultsList.innerHTML = `
+                <li>Tires found for ${year} ${make} ${model} (${submodel})</li>
+                <li>Example Tire Brand 1</li>
+                <li>Example Tire Brand 2</li>
+            `;
+        } else {
+            resultsList.innerHTML = '<li>No results found. Please refine your search.</li>';
+        }
+    </script>
+</body>
+</html>
