@@ -1,26 +1,19 @@
-/* General Reset */
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1rem;
-}
-
-/* Header Styles */
+/* Header */
 .main-header {
-    background-color: #000;
-    color: #fff;
+    background-color: #1c1c1c;
     padding: 10px 20px;
-}
-
-.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .logo img {
@@ -28,70 +21,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    margin: 0 15px;
-}
-
-.nav-links a.active {
-    text-decoration: underline;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 .header-actions a {
-    color: #fff;
-    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
     padding: 100px 20px;
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+.hero .cta-button {
+    background-color: #ff6f00;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-}
-
-/* Tire Search Section */
-.tire-search {
-    padding: 50px 20px;
-    background-color: #f8f8f8;
-}
-
-.tire-search h2 {
+/* Search Section */
+.search-tires {
+    background-color: white;
+    padding: 40px 20px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.search-options {
+.search-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
-.search-options form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.search-form .form-group {
+    text-align: left;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #000;
-    color: #fff;
+/* Benefits Section */
+.benefits {
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
+    background-color: #eee;
     text-align: center;
 }
 
-footer .footer-links a {
-    color: #fff;
-    margin: 0 10px;
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
